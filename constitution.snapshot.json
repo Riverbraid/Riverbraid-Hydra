@@ -1,6 +1,6 @@
 {
   "version": "1.5.0",
-  "merkle_root": "32f64b6d4890c847f7661bed25c1afd4ed05fa53549d1577a23fc48f63a6f722",
+  "merkle_root": "4aaaaea926185f0015c480a206f7051ea5712f17a0e1060277b2e183928fa298",
   "files": [
     {
       "path": ".gitattributes",
@@ -14,13 +14,13 @@
     },
     {
       "path": "constitution.threshold.json",
-      "sha256": "e6ce8e0cc766aa8fef485b1b30fade481bd8358fa71a37d06d857880517b913c",
-      "leaf": "605dc02bea9a6336ace685f89f8c86adfae368e48a97efcfc4836e113f24721e"
+      "sha256": "4ee348735d3e4e050b55a863701e7f210fccde007eab9101a658ac65eab78595",
+      "leaf": "d30fa0dd36ecf97221b8dba1d4a23c1ea19579c2f01fac399abe0c6e40f91385"
     },
     {
       "path": "package.json",
-      "sha256": "c350f96c38b64870284fdf76c0790e814c88d429490dde939bf6c0b017d91af6",
-      "leaf": "ce53c70f3323fb89a5dd7e571416190e2ba2b5b1783a7139506f50808120b9d1"
+      "sha256": "41877e93adcb6d605974740a4c3a814460d48f74024a02b34f462fca7dd708f3",
+      "leaf": "1a817fe667ac139ce4ce3be8c627e208cd1a30fadbcd1f729969b9d2863abdd7"
     },
     {
       "path": "README.md",
