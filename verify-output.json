@@ -1,0 +1,22 @@
+{
+  "repo": "Riverbraid-Hydra",
+  "ring": 2,
+  "class": "runtime-fork",
+  "status": "VERIFIED",
+  "verification_scope": "ring2-runtime-fork-anchor-and-file-surface",
+  "claim_boundary": "infrastructure-classification-only",
+  "expected_anchor": "STATIONARY_STATE_V2_20260425-092050",
+  "observed_anchor": "STATIONARY_STATE_V2_20260425-092050",
+  "anchor_matches": true,
+  "structural_artifact_present": true,
+  "required_files": [
+    ".anchor",
+    "AUTHORITY.md",
+    "RING.md",
+    "package.json",
+    "verify.mjs"
+  ],
+  "missing_files": [],
+  "failure_codes": [],
+  "digest": "sha256:baebe18701ff960d0bd9eef65e3e1a670451393e958450f620540a0ccf52b457"
+}
