@@ -1,15 +1,45 @@
----
-**Status:** Experimental / Research
-**Normative Source:** N/A
-**Authority Boundary:** This repository is experimental and does not define canonical Riverbraid protocol semantics.
----
 
+Status: Experimental / Research
 
-# Riverbraid-Hydra
-**The Performance Heartbeat**
+Normative Source: Riverbraid-Core
 
-A visual synth substrate for live-coding that integrates the Riverbraid gate. It monitors the frequency of execution to ensure the visual loop remains within the intended metabolic boundaries of the system.
+Authority Boundary: This repository is a Ring 2 runtime fork. It does not define canonical Riverbraid protocol semantics.
 
-### **Verification**
-`node riverbraid-monitor.js`
-> Confirms the heartbeat and checks for invariant violations in the visual stream.
+Riverbraid-Hydra
+
+The Performance Heartbeat
+
+Riverbraid-Hydra is a runtime fork surface for Hydra based Riverbraid video synthesis and modular signal experiments.
+
+It is anchored to the local Riverbraid-Core dependency declared in package.json as: "riverbraid-core": "file:../Riverbraid-Core"
+Authority Boundary
+
+This repository does not supersede Riverbraid-Core. Riverbraid-Core remains the normative source for protocol semantics.
+
+API Scoping
+
+Riverbraid-Core does not currently expose internal files such as run-vectors.cjs or gate.mjs as public package scoped APIs. Package scoped imports such as require("riverbraid-core/gate.mjs") are not part of the current supported surface. The local runtime fork path remains the truthful binding for this repository.
+
+Ring 2 Verification Surface
+
+The Ring 2 verification surface for this repository is limited to:
+
+.anchor
+
+AUTHORITY.md
+
+RING.md
+
+verify.mjs
+
+verify-output.json
+
+package.json
+
+verify-output.json records the repository specific verifier output. It does not verify the full constellation.
+
+Verification
+
+node .\verify.mjs
+
+Expected local status: VERIFIED.
