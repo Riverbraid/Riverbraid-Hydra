@@ -1,22 +1,23 @@
 {
+  "schema": "riverbraid.infrastructure.verify.output",
+  "version": "1.0.0",
   "repo": "Riverbraid-Hydra",
   "ring": 2,
-  "class": "runtime-fork",
+  "role": "hydra-runtime-fork",
+  "invariant": "HYDRA_QUORUM_STATIONARY",
+  "contract_type": "multi-head-quorum-contract",
   "status": "VERIFIED",
-  "verification_scope": "ring2-runtime-fork-anchor-and-file-surface",
-  "claim_boundary": "infrastructure-classification-only",
-  "expected_anchor": "STATIONARY_STATE_V2_20260425-092050",
-  "observed_anchor": "STATIONARY_STATE_V2_20260425-092050",
-  "anchor_matches": true,
-  "structural_artifact_present": true,
+  "canonical_signal": "hydra:QUORUM_STATIONARY",
+  "canonical_reason": "Match",
+  "digest": "sha256:90de9d7a869910634ff799144ffbd8cef9a4678089891e0b4070f4dd247befcd",
   "required_files": [
-    ".anchor",
-    "AUTHORITY.md",
-    "RING.md",
     "package.json",
-    "verify.mjs"
+    "index.js",
+    "verify.mjs",
+    "protocol.steps",
+    "AUTHORITY.md",
+    "RING.md"
   ],
   "missing_files": [],
-  "failure_codes": [],
-  "digest": "sha256:c65a08642259c8abf14b4d4044f4f4331c12f1c17e15c9e6ddb3bec2787c3c15"
+  "failure_codes": []
 }

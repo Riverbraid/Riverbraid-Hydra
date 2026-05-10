@@ -1,0 +1,1 @@
+export function verify(i){ const h = i.hydra; const s = (i.repo==="Riverbraid-Hydra" && i.ring===2 && i.role==="hydra-runtime-fork" && h.heads.join("|")==="identity|authority|integrity" && h.quorum===2 && h.fail_closed===true); return {pass:s, stationary:s, signal:s?"hydra:QUORUM_STATIONARY":"hydra:DRIFT", reason:s?"Match":"Drift"}; }

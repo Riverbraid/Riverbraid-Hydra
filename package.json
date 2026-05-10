@@ -1,11 +1,8 @@
 {
-    "main":  "riverbraid-monitor.js",
-    "name":  "riverbraid-hydra",
-    "version":  "1.5.0",
-    "dependencies":  {
-                         "riverbraid-core":  "file:../Riverbraid-Core"
-                     },
-    "scripts":  {
-                    "test:riverbraid":  "node verify-vector.cjs"
-                }
+  "name": "riverbraid-hydra",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "scripts": { "verify": "node verify.mjs" },
+  "riverbraid": { "ring": 2, "role": "hydra-runtime-fork", "invariant": "HYDRA_QUORUM_STATIONARY", "claim_boundary": "deterministic-infrastructure-contract-only" }
 }

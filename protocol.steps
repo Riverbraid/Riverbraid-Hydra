@@ -1,0 +1,1 @@
+{"schema":"riverbraid.protocol.steps","version":"1.0.0","canonical_input":{"repo":"Riverbraid-Hydra","ring":2,"role":"hydra-runtime-fork","hydra":{"heads":["identity","authority","integrity"],"quorum":2,"fail_closed":true}}}
