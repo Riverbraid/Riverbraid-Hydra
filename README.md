@@ -1,45 +1,39 @@
+# Riverbraid-Hydra
 
-Status: Experimental / Research
+**Status:** Experimental / Research
+**Normative Source:** Riverbraid-Core
+**Claim Boundary:** Declared Conditions Only
 
-Normative Source: Riverbraid-Core
-
-Authority Boundary: This repository is a Ring 2 runtime fork. It does not define canonical Riverbraid protocol semantics.
-
-Riverbraid-Hydra
-
-The Performance Heartbeat
+## Role in Riverbraid
 
 Riverbraid-Hydra is a runtime fork surface for Hydra based Riverbraid video synthesis and modular signal experiments.
 
-It is anchored to the local Riverbraid-Core dependency declared in package.json as: "riverbraid-core": "file:../Riverbraid-Core"
-Authority Boundary
+Riverbraid-Core remains the normative source for protocol semantics. This repository does not define or replace canonical Riverbraid protocol rules.
 
-This repository does not supersede Riverbraid-Core. Riverbraid-Core remains the normative source for protocol semantics.
+## Authority Boundary
 
-API Scoping
+This repository is a Ring 2 runtime fork. Local runtime, synthesis, or modular signal language is not protocol authority.
 
-Riverbraid-Core does not currently expose internal files such as run-vectors.cjs or gate.mjs as public package scoped APIs. Package scoped imports such as require("riverbraid-core/gate.mjs") are not part of the current supported surface. The local runtime fork path remains the truthful binding for this repository.
+## API Boundary
 
-Ring 2 Verification Surface
+Riverbraid-Core does not currently expose internal files such as `run-vectors.cjs` or `gate.mjs` as public package scoped APIs. Package scoped imports such as `require("riverbraid-core/gate.mjs")` are not part of the current supported surface.
 
-The Ring 2 verification surface for this repository is limited to:
+## Verification Boundary
 
-.anchor
+The local verification surface is limited to repository evidence and declared local verifier output. `verify-output.json` records repository specific verifier output. It does not verify the full constellation.
 
-AUTHORITY.md
+## Local Verification
 
-RING.md
-
-verify.mjs
-
-verify-output.json
-
-package.json
-
-verify-output.json records the repository specific verifier output. It does not verify the full constellation.
-
-Verification
-
+```powershell
 node .\verify.mjs
+```
 
-Expected local status: VERIFIED.
+Expected local status: `VERIFIED`.
+
+## Non Claims
+
+This repository does not claim certification, production readiness, external audit, legal approval, complete AI safety, absolute security, or absence of defects.
+
+## License
+
+MIT.
