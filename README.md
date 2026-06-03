@@ -1,39 +1,33 @@
 # Riverbraid-Hydra
 
-**Status:** Experimental / Research
-**Normative Source:** Riverbraid-Core
-**Claim Boundary:** Declared Conditions Only
+**Lifecycle category:** experimental runtime surface
+**Normative source:** Riverbraid-Core
+**Claim boundary:** Declared Conditions Only
 
 ## Role in Riverbraid
 
-Riverbraid-Hydra is a runtime fork surface for Hydra based Riverbraid video synthesis and modular signal experiments.
+Riverbraid-Hydra is an experimental runtime fork surface for Hydra based Riverbraid video synthesis and modular signal experiments.
 
-Riverbraid-Core remains the normative source for protocol semantics. This repository does not define or replace canonical Riverbraid protocol rules.
+This repository is a runtime and visualization surface. It does not define canonical Riverbraid protocol semantics.
 
-## Authority Boundary
+## Public verification boundary
 
-This repository is a Ring 2 runtime fork. Local runtime, synthesis, or modular signal language is not protocol authority.
+This repository is not part of the current Evaluation Kit canonical verification registry unless explicitly listed there in a future verified registry.
 
-## API Boundary
+Local verifier output is repository specific. It does not verify the full Riverbraid constellation.
 
-Riverbraid-Core does not currently expose internal files such as `run-vectors.cjs` or `gate.mjs` as public package scoped APIs. Package scoped imports such as `require("riverbraid-core/gate.mjs")` are not part of the current supported surface.
+## Evidence boundary
 
-## Verification Boundary
+This repository does not claim certification, legal approval, production readiness, absolute security, external audit, complete AI safety, adoption, registry freshness, or absence of defects.
 
-The local verification surface is limited to repository evidence and declared local verifier output. `verify-output.json` records repository specific verifier output. It does not verify the full constellation.
+## Authority boundary
 
-## Local Verification
-
-```powershell
-node .\verify.mjs
-```
-
-Expected local status: `VERIFIED`.
-
-## Non Claims
-
-This repository does not claim certification, production readiness, external audit, legal approval, complete AI safety, absolute security, or absence of defects.
+Riverbraid-Core remains the normative source for protocol semantics. This repository does not override Core, the Evaluation Kit registry, workflow evidence, release state, or external review.
 
 ## License
 
 MIT.
+
+---
+
+**Navigation:** [Evaluation Kit](https://github.com/Riverbraid/Riverbraid-Evaluation-Kit) | [Documentation](https://github.com/Riverbraid/Riverbraid-Documentation) | [System Map](https://github.com/Riverbraid/Riverbraid-Documentation)
